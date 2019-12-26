@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/exam.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">蓝鸟通讯社</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li id="switch" class="mui-table-view-cell">
+					定时轮播
+					<div class="mui-switch">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/1.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/2.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/3.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/4.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/5.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active" href="index.html">
+		        <span class="mui-icon mui-icon-weibo"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item" href="imageviewer.html">
+		        <span class="mui-icon mui-icon-weixin"></span>
+		        <span class="mui-tab-label">新闻</span>
+		    </a>
+		    <a class="mui-tab-item" href="http://mp.weixin.qq.com/mp/homepage?__biz=MjM5NDE4MzMwMw==&hid=1&sn=ff14ddfbbdab31083bfc226778bf4f25&scene=18#wechat_redirect">
+		        <span class="mui-icon mui-icon-pengyouquan"></span>
+		        <span class="mui-tab-label">公众号</span>
+		    </a>
+		    <a class="mui-tab-item" href="login.html">
+		        <span class="mui-icon mui-icon-chat"></span>
+		        <span class="mui-tab-label">登录</span>
+		    </a>
+		</nav>
+			<div class="mui-content">
+		        <ul class="mui-table-view mui-grid-view mui-grid-9">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="https://weibo.com/zdnflanniao?topnav=1&wvr=6&topsug=1&is_all=1">
+		                    <span class="mui-icon iconfont icon-bili"></span>
+		                    <div class="mui-media-body">微博</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="https://v.qq.com/vplus/10cd185185a8b8cd610b730147201be9#uin=10cd185185a8b8cd610b730147201be9">
+		                    <span class="mui-icon iconfont icon-qq-copy"></span>
+		                    <div class="mui-media-body">腾讯</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="http://mp.weixin.qq.com/mp/homepage?__biz=MjM5NDE4MzMwMw==&hid=1&sn=ff14ddfbbdab31083bfc226778bf4f25&scene=18#wechat_redirect">
+		                    <span class="mui-icon iconfont icon-yijicaidanalituku_gongzhonghao"></span>
+		                    <div class="mui-media-body">公众号</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="https://v.douyin.com/XfQ2Sb/">
+		                    <span class="mui-icon mui-icon-location"></span>
+		                    <div class="mui-media-body">抖音</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="https://space.bilibili.com/390128304/?share_source=copy_link&share_medium=iphone&bbid=ZE4A7DE4A40BD42E42F1BE4731AC079F7C25&ts=1575645590">
+		                    <span class="mui-icon mui-icon-search"></span>
+		                    <div class="mui-media-body">哔哩哔哩</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="imageviewer.html">
+		                    <span class="mui-icon mui-icon-phone"></span>
+		                    <div class="mui-media-body">图片</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="listview.html">
+		                    <span class="mui-icon mui-icon-gear"></span>
+		                    <div class="mui-media-body">视频</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="https://mp.weixin.qq.com/s/ldyss6wp9OH6JloOh6r3IA">
+		                    <span class="mui-icon mui-icon-info"></span>
+		                    <div class="mui-media-body">招新</div></a></li>
+		           <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="typography.html">
+		                    <span class="mui-icon mui-icon-more"></span>
+		                    <div class="mui-media-body">联系</div></a></li>
+		        </ul> 
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+			document.getElementById("switch").addEventListener('toggle', function(e) {
+				if (e.detail.isActive) {
+					slider.slider({
+						interval: 5000
+					});
+				} else {
+					slider.slider({
+						interval: 0
+					});
+				}
+			});
+		</script>
+		<script >
+        	mui.init();   	mui('body').on('tap','a',function(){document.location.href=this.href;});
+	   </script>
+	</body>
+
+</html>

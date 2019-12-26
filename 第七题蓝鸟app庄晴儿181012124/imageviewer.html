@@ -1,0 +1,218 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<style type="text/css">
+			.mui-preview-image.mui-fullscreen {
+				position: fixed;
+				z-index: 20;
+				background-color: #000;
+			}
+			.mui-preview-header,
+			.mui-preview-footer {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				z-index: 10;
+			}
+			.mui-preview-header {
+				height: 44px;
+				top: 0;
+			}
+			.mui-preview-footer {
+				height: 50px;
+				bottom: 0px;
+			}
+			.mui-preview-header .mui-preview-indicator {
+				display: block;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				margin: 15px auto 4;
+				width: 70px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 12px;
+				font-size: 16px;
+			}
+			.mui-preview-image {
+				display: none;
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			.mui-preview-image.mui-preview-in {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
+			.mui-preview-image.mui-preview-out {
+				background: none;
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut;
+			}
+			.mui-preview-image.mui-preview-out .mui-preview-header,
+			.mui-preview-image.mui-preview-out .mui-preview-footer {
+				display: none;
+			}
+			.mui-zoom-scroller {
+				position: absolute;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				-webkit-backface-visibility: hidden;
+			}
+			.mui-zoom {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+				width: 100%;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+				display: inline-table;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.mui-preview-loading {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.mui-preview-loading.mui-active {
+				display: block;
+			}
+			.mui-preview-loading .mui-spinner-white {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25px;
+				margin-top: -25px;
+				height: 50px;
+				width: 50px;
+			}
+			.mui-preview-image img.mui-transitioning {
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
+			}
+			@-webkit-keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			p img {
+				max-width: 100%;
+				height: auto;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新闻</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<p>节目开场，由DMC舞蹈协会带来的《酣舞恒梦》瞬间点燃了晚会的气氛，而Jazz、Popping等酷炫的舞蹈串烧感染全场。紧接着，校团委廖丽鹂老师上台致辞，她表示学生社团一直是高校第二课堂的重要组成部分，是大学生开发潜能、展示自我的舞台。相信在今晚缤纷夜的舞台上，同学们定能绽放异彩，充分挖掘兴趣潜能，让校园洋溢青春的气息。</p>
+				<p>
+					<img src="images/1.jpg" data-preview-src="" data-preview-group="1" />
+				</p>
+				<p>一人一动漫协会的二次元美少女们活力登场，以《初心未忘，为梦舞动欲再于辉夜城起舞》为主题，给大家带来了Love Live！的舞台舞蹈，表演者们身穿与动漫人物一致的cosplay服装，在舞台上还原着动漫中的场景，唱跳结合带着观众们进入了奇思妙想的动漫世界。</p>
+				<p>
+					<img src="images/2.jpg" data-preview-src="" data-preview-group="1" />
+				</p>
+				<p>随着锣鼓音乐的响起，威风凛凛的两只金狮在灯光下焕发金光，神采奕奕，时而威武勇猛地蹬地直立、腾空跳跃，时而又显出一副十分乖顺的模样，坐在地上眨巴着眼睛，逗人喜爱。接着，炫彩的双截棍表演动作潇洒威武，挥洒自如，掀起台下一片欢呼。武术协会的演出《武德嵌入魂 武训始于心》向观众们展现了中华武术之美。</p>
+				<p>
+					<img src="images/3.jpg" data-preview-src="" data-preview-group="1" />
+				</p>
+			</div>
+		</div>
+				<nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active" href="index.html">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item" href="imageviewer.html">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">新闻</span>
+		    </a>
+		    <a class="mui-tab-item" href="page1.html">
+		        <span class="mui-icon mui-icon-email"></span>
+		        <span class="mui-tab-label">人物志</span>
+		    </a>
+		    <a class="mui-tab-item" href="login.html">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">登录</span>
+		    </a>
+		</nav>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+	<script>
+		mui.previewImage();
+	</script>
+	<script >
+        	mui.init();   	mui('body').on('tap','a',function(){document.location.href=this.href;});
+	</script>
+
+</html>
